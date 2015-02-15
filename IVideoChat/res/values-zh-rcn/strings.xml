@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Title -->
+    <string name="app_name">IVideoChat</string>
+    
+    <!-- IVideoChat -->
+    <string name="textview_welcome">欢迎使用IVideoChat</string>
+    <string name="textview_tip">请确保您的网络畅通</string>
+    <string name="textview_network_error">当前网络不可用</string>
+    <string name="textview_empty">必填区域不能为空</string>
+    <string name="dialog_wait">请稍后……</string>
+    <string name="server_issue">服务器故障，请稍后再试</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    
+    <!-- SigninActivity -->
+    <string name="button_login">登入</string>
+    <string name="button_register">注册</string>
+    <string name="hint_phone">手机号码（必填）</string>
+    <string name="hint_password">密码（必填）</string>
+    <string name="textview_error">手机号码或密码错误</string>
+    <string name="textview_exist">您的号码已被注册</string>
+    
+    <!-- ChoiceActivity -->
+    <string name="button_video">视频通话</string>
+    <string name="button_upload">录制上传</string>
+    <string name="button_logout">注销</string>
+    
+    <!-- ShootActivity -->
+    <string name="button_start">开始</string>
+    <string name="button_stop">停止</string>
+    <string name="button_back">返回</string>
+    <string name="toast_nosdcard">请插入sdcard后再试</string>
+    <string name="dialog_upload">需要上传吗？</string>
+    <string name="dialog_uploading">上传中……</string>
+    <string name="toast_cancel_upload">上传取消</string>
+    <string name="toast_success_upload">上传成功</string>
+    <string name="toast_fail_upload">上传失败</string>    
+    
+    <!-- CallActivity -->
+    <string name="edit_update">更新</string>
+    <string name="button_edit">E</string>
+    <string name="dialog_title">修改姓名</string>
+	<string name="button_call">呼叫</string>
+	<string name="hint_receiver">您想要与谁通话？</string>
+	<string name="textview_update_fail">更新失败</string>
+    <string name="textview_update_success">更新成功</string>
+    <string name="dialog_calling">呼叫中……</string>
+    <string name="toast_red5error">服务器连接失败</string>
+    <string name="toast_nouser">该用户未注册</string>
+    
+    <!-- ChatActivity -->
+	<string name="button_over">结束</string>
+	<string name="dialog_callyou">呼叫您</string>
+	<string name="dialog_reject">拒绝了您的呼叫</string>
+	<string name="dialog_exit">退出视频通话吗？</string>
+	<string name="dialog_nologin">未登入</string>
+	<string name="dialog_usercalling">正在通话中</string>
+	
+</resources>

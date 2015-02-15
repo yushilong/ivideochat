@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/IVideoChat/libs/android-async-http-1.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/IVideoChat/libs/juv-rtmp-client-1.5.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/IVideoChat/libs/gson-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+   	android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/editText_editname"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_height="40dp"
+        android:maxLength="20"
+        android:background="@drawable/input_box"
+        android:singleLine="true"
+        android:layout_margin="15dp">
+        
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

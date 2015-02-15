@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+         <SurfaceView
+        	android:id="@+id/surfaceView"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent" />
+
+         <Button
+             android:id="@+id/button_start"
+             android:background="@drawable/button"
+             android:layout_width="60dp"
+             android:layout_height="30dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentBottom="true"
+             android:textColor="#000000"
+             android:text="@string/button_start" />
+
+         <Button
+             android:id="@+id/button_stop"
+             android:background="@drawable/button"
+             android:layout_width="60dp"
+             android:layout_height="30dp"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:textColor="#000000"
+             android:text="@string/button_stop" />
+
+         <Button
+             android:id="@+id/button_back"
+             android:background="@drawable/button"
+             android:layout_width="60dp"
+             android:layout_height="30dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:textColor="#000000"
+             android:text="@string/button_back" />
+
+         <TextView
+             android:id="@+id/textView_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:text="00:00:00"
+             android:textColor="#FF0000"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <Spinner
+             android:id="@+id/spinner_size"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="200dp"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        
+        <RelativeLayout 
+            android:id="@+id/layout_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="70dp">
+		    	
+		        <Button
+		   	    android:id="@+id/button_edit"
+		   	    android:layout_width="50dp"
+		   	    android:layout_height="50dp"
+		   	    android:layout_centerVertical="true"
+		   	    android:background="@drawable/edit_effect"
+		   	    android:layout_alignParentRight="true"
+		   	    android:text="@string/button_edit" />
+
+		        <TextView
+		            android:id="@+id/textView_nickname"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:maxLength="20"
+		            android:background="@drawable/textview_style"
+		            android:text="@string/dialog_title"
+		            android:textAppearance="?android:attr/textAppearanceLarge"
+		            android:textColor="#000000" />
+
+        </RelativeLayout>
+
+    	<EditText
+        android:id="@+id/editText_receiver"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:background="@drawable/input_box"
+        android:paddingLeft="5dp"
+        android:layout_margin="30dp"
+        android:layout_below="@id/layout_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/hint_receiver"
+        android:inputType="phone" />
+    	<requestFocus />
+
+    	<Button
+    	    android:id="@+id/button_call"
+    	    android:layout_below="@id/editText_receiver"
+    	    android:layout_width="80dp"
+    	    android:layout_height="40dp"
+    	    android:layout_centerHorizontal="true"
+    	    android:background="@drawable/button"
+    	    android:text="@string/button_call" />
+    	
+    	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_welcome"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/textview_tip"
+                android:textColor="#EE0000" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

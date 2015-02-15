@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Title -->
+    <string name="app_name">IVideoChat</string>
+    
+    <!-- IVideoChatActivity -->
+    <string name="textview_welcome">Welcome to use IVideoChat</string>
+    <string name="textview_tip">please ensure your network is smooth</string>
+    <string name="textview_network_error">the current network is not available</string>
+    <string name="textview_empty">the required content is empty</string>
+   	<string name="dialog_wait">Please waiting……</string>
+   	<string name="server_issue">Server issue, please try again</string>
+   	<string name="dialog_ok">confirm</string>
+    <string name="dialog_cancel">cancel</string>
+   	
+   	<!-- ChoiceActivity -->
+    <string name="button_video">video chat</string>
+    <string name="button_upload">shoot upload</string>
+	<string name="button_logout">logout</string>
+    
+    <!-- SigninActivity -->
+    <string name="button_login">login</string>
+    <string name="button_register">register</string>    
+    <string name="hint_phone">phone number (require)</string>
+    <string name="hint_password">password (require)</string>
+    <string name="textview_error">phone number or password error</string>
+    <string name="textview_exist">your phone number has been registered</string>
+    
+    <!-- ShootActivity -->
+    <string name="button_start">start</string>
+    <string name="button_stop">stop</string>
+    <string name="button_back">back</string>
+    <string name="toast_nosdcard">please insert sdcard</string>
+    <string name="dialog_upload">do you want to upload?</string>
+    <string name="dialog_uploading">uploading……</string>
+    <string name="toast_cancel_upload">upload canceled</string>
+    <string name="toast_success_upload">upload successfully</string>
+    <string name="toast_fail_upload">uplaod failed</string>
+    
+    <!-- CallActivity -->
+    <string name="edit_update">update</string>
+    <string name="button_edit">E</string>
+    <string name="dialog_title">edit real name</string>
+	<string name="button_call">call</string>
+	<string name="hint_receiver">who do you want to call?</string>
+    <string name="textview_update_fail">update failed</string>
+    <string name="textview_update_success">update successfully</string>
+    <string name="dialog_calling">calling</string>
+   	<string name="toast_red5error">server connection error</string>
+   	<string name="toast_nouser">this user does not register</string>    
+    
+   	<!-- ChatActivity -->
+   	<string name="button_over">Stop</string>
+   	<string name="dialog_callyou"> call you</string>
+	<string name="dialog_reject"> reject your call</string>
+	<string name="dialog_exit">exit video chatting</string>
+	<string name="dialog_nologin"> is not login</string>
+	<string name="dialog_usercalling"> is calling now</string>
+
+	<string name="error_network">网络故障，请稍后重试</string>
+    <string name="error_datafetch">数据获取失败，请稍后重试</string>
+</resources>
