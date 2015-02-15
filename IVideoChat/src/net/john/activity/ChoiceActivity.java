@@ -83,7 +83,7 @@ public class ChoiceActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				if (!roomCreateSuccessed) {
-					Toast.makeText(ChoiceActivity.this, "ÇëÏÈ³õÊ¼»¯·¿¼ä!",
+					Toast.makeText(ChoiceActivity.this, "è¯·å…ˆåˆ›å»ºæˆ¿é—´!",
 							Toast.LENGTH_LONG).show();
 					return;
 				}
@@ -141,7 +141,7 @@ public class ChoiceActivity extends Activity {
 				super.success(successObject);
 				videoRoom = new Gson().fromJson(successObject.toString(),
 						VideoRoom.class);
-				Toast.makeText(ChoiceActivity.this, "·¿¼ä´´½¨³É¹¦!",
+				Toast.makeText(ChoiceActivity.this, "æˆ¿é—´åˆ›å»ºæˆåŠŸ!",
 						Toast.LENGTH_LONG).show();
 				roomCreateSuccessed = true;
 				if (pushStream == null) {
@@ -177,7 +177,7 @@ public class ChoiceActivity extends Activity {
 						pull = new Gson().fromJson(successObject.toString(),
 								Stream.class);
 						TextView tv_pullTextView = ((TextView) findViewById(R.id.tv_pull));
-						tv_pullTextView.setText("À­Á÷µØÖ·£º" + pull.link);
+						tv_pullTextView.setText("æ‹‰æµåœ°å€ï¼š" + pull.link);
 						tv_pullTextView.getPaint().setFlags(
 								Paint.UNDERLINE_TEXT_FLAG);
 						tv_pullTextView
@@ -192,7 +192,7 @@ public class ChoiceActivity extends Activity {
 												"simpleText", pull.link);
 										clipboardManager.setPrimaryClip(clip);
 										Toast.makeText(ChoiceActivity.this,
-												"ÒÑ¸´ÖÆ", Toast.LENGTH_SHORT)
+												"å·²å¤åˆ¶", Toast.LENGTH_SHORT)
 												.show();
 										return false;
 									}
@@ -226,7 +226,7 @@ public class ChoiceActivity extends Activity {
 								Stream.class);
 //						final String pushStreamAddr = push.cdnType == 2 ? push.link + "/"+ push.streamName : push.link;
 						final String pushStreamAddr = "rtmp://push1.arenazb.hupu.com/test/336699";
-						((TextView) findViewById(R.id.tv_push)).setText("ÍÆÁ÷µØÖ·£º"+pushStreamAddr);
+						((TextView) findViewById(R.id.tv_push)).setText("æ¨æµåœ°å€ï¼š"+pushStreamAddr);
 						new Thread() {
 							public void run() {
 								RTMPConnectionUtil.ConnectRed5(
@@ -246,9 +246,9 @@ public class ChoiceActivity extends Activity {
 	}
 
 	public String getIp() {
-		// »ñÈ¡wifi·şÎñ
+		// ï¿½ï¿½È¡wifiï¿½ï¿½ï¿½ï¿½
 		WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
-		// ÅĞ¶ÏwifiÊÇ·ñ¿ªÆô
+		// ï¿½Ğ¶ï¿½wifiï¿½Ç·ï¿½ï¿½ï¿½
 		if (!wifiManager.isWifiEnabled()) {
 			wifiManager.setWifiEnabled(true);
 		}

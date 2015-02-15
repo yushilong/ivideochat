@@ -170,8 +170,7 @@ public class VideoActivity extends Activity{
 				if (hex.length() == 1) {
 				hex = '0' + hex; 
 			}
-				Log.i(TAG, "数组16进制内容:"+hex.toUpperCase());
-			}
+        }
 	}
 		
 		@Override
@@ -187,14 +186,12 @@ public class VideoActivity extends Activity{
 				init = true;
 			}
 			final long ctime = System.currentTimeMillis();
-//			Log.i(TAG, "采集到的数组的长度："+arg0.length);
-			/**将采集的YUV420SP数据转换为RGB格式*/
+			/**YUV420SP杞崲涓篟GB缂栫爜*/
             byte[] current = RemoteUtil.decodeYUV420SP2RGB(arg0, width, height);
             try {
-//            		int byte_result = Decode(arg0);/**将采集到的每一帧视频数据用H264编码*/
+//            		int byte_result = Decode(arg0);/**锟斤拷锟缴硷拷锟斤拷锟斤拷每一帧锟斤拷频锟斤拷锟斤拷锟紿264锟斤拷锟斤拷*/
 //        			byte[] bytes1 = copyOf(out,byte_result);
-//        			Log.i(TAG, "byte数组的长度："+bytes1.length);
-            		/**打包该编码后的H264数据*/
+            		/**鎵撳寘H264缂栫爜*/
                 final byte[] packet = RemoteUtil.encode(current, previous, blockWidth, blockHeight, width, height);
         			fireOnVideoData(new MediaDataByteArray(timeBetweenFrames, new ByteArray(packet)));
                 previous = current;
@@ -206,7 +203,6 @@ public class VideoActivity extends Activity{
             }
             final int spent = (int) (System.currentTimeMillis() - ctime);
             try {
-//            	Log.i(TAG, "线程等待："+Math.max(0, timeBetweenFrames - spent)+" s");
 				Thread.sleep(Math.max(0, timeBetweenFrames - spent));
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
